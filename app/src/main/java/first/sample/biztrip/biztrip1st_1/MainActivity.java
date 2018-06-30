@@ -1,5 +1,6 @@
 package first.sample.biztrip.biztrip1st_1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,8 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickButton(View v) {
 
-        Toast.makeText(this, "Hello!", Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+        //Toast.makeText(this, "Hello!", Toast.LENGTH_LONG).show();
 
     }
+
+
 
 }
